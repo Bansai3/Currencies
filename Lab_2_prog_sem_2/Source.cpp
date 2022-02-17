@@ -49,14 +49,14 @@ int main()
 	std::string str;
 	json j;
 
-	j = client.Get_response("");
-	for (int i = 0; i < mass_of_keys.size(); i++)
-	{
-		get_field_from_json(j, "Valute", mass_of_keys[i], valutes);
-	}
 
 	do
 	{
+		j = client.Get_response("");
+		for (int i = 0; i < mass_of_keys.size(); i++)
+		{
+			get_field_from_json(j, "Valute", mass_of_keys[i], valutes);
+		}
 		valutes.get_valutes();
 		time();
 		system("cls");
