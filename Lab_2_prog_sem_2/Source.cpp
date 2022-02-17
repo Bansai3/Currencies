@@ -54,17 +54,17 @@ int main()
 	{
 		get_field_from_json(j, "Valute", mass_of_keys[i], valutes);
 	}
-	int count = 1;
+
 	do
 	{
-			count = 0;
 		valutes.get_valutes();
 		time();
 		system("cls");
 		if (_kbhit())
 			break;
 	} while (1);
-	
+
+	valutes.get_sort_values();
 	std::cout << std::endl;
 	std:: cout << valutes.get_average();
 	std::cout << std::endl;

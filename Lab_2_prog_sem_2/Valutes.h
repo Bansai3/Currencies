@@ -10,5 +10,6 @@ public:
 	void get_valutes();
 	double get_average();
 	double get_median();
+	void get_sort_values();
 };
 
